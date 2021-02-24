@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+</head>
+
+<body>
+    <form action="server.php" method="POST">
+        <fieldset>
+            <legend> Datos del usuario </legend>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" required>
+            <br>
+            <br>
+            ¿Eres socio?
+            <br>
+            <p>
+                <input type="radio" name="Socio" value="Sí" required>
+                a. Sí, soy socio.
+                <input type="radio" name="Socio" value="No" required>
+                b. No, no soy socio.
+            </p>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" required>
+            <br>
+            <br>
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" id="Contraseña" minlength="8" required>
+        </fieldset>
+    
+        <fieldset>
+            <legend> Datos de la reserva </legend>
+            <label for="Edad">Edad:</label>
+            <select name="Edad" id="Edad" required>
+                <option disabled selected value="">Elija una opción</option>
+                <option value="1">Menor de 18 años</option>
+                <option value="2">Entre 18 y 65 años</option>
+                <option value="3">Más de 65 años</option>
+            </select>
+            <br>
+            <br>
+            Seleccionar la fecha y hora de reserva:
+            <br>
+            <br>
+            <input type="date" value="dd / mm / aaaa" required>
+            <input type="time" value="-- : --" required>
+            <br>
+            <br>
+            <textarea cols="25" rows="8" maxlength="250" placeholder="Deja tus comentarios aquí."></textarea>
+        </fieldset>
+        
+        <br>
+        
+        <input type="checkbox" required>
+        Acepto las condiciones
+        <br>
+        <br>
+        <button>Enviar</button>
+        <br>
+        <br>
+    </form>
+
+</body>
+
+</html>
+
