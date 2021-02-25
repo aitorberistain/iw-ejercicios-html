@@ -1,6 +1,10 @@
-.tamañoImagen{width: 200px; height: 200px;}
+.tamañoImagen {
+  width: 200px;
+  height: 200px;
+}
+
 a {
-    color: blue;
-    font-family: cursive;
-    font-size: 80%;
+  color: blue;
+  font-family: cursive;
+  font-size: 80%;
 }
